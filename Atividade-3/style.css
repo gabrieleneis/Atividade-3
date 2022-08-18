@@ -1,0 +1,132 @@
+body {
+    background-color: #090b1a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.container {
+    background-color: #1b1938;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.total {
+    max-width: 300px;
+    width: 100%;
+}
+
+.img {
+    background-color: #aa5cdb;
+    border-radius: 10px 10px 0px 0px;
+    height: 220px;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 60%;
+}
+
+.textos {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.titulo {
+    margin-top: 0px;
+    font-family: "Inter";
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+.titulo span {
+    color: #aa5cdb;
+}
+
+.texto {
+    font-family: "Inter";
+    font-size: 12px;
+    margin-top: 2px;
+    font-weight: 400;
+    color: #ffffffbf;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.numero {
+    font-family: "Inter";
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.objeto {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: #ffffffbf;
+    margin-top: 2px;
+    font-size: 10px;
+}
+
+@media (min-width:768px) {
+
+
+    .container {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+
+    .total {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 230px;
+    }
+
+    .total {
+        max-width: 700px;
+    }
+
+    .textos {
+        text-align: left;
+    }
+
+    .img {
+        border-radius: 0px 10px 10px 0px;
+        height: unset;
+    }
+
+    .img img {
+        border-radius: 0px 10px 10px 0px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .dados {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .textos {
+        padding: 30px;
+        padding-bottom: 5px;
+        text-align: left;
+    }
+
+    .dados {
+        justify-content: space-around;
+    }
+}
